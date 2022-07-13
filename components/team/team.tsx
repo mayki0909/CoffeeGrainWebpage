@@ -6,7 +6,7 @@ import styles from './team.module.css';
 export const Team: NextComponentType = () => {
 
   return (
-    <div className='container'>
+    <div className='container mt-5'>
       <div className='row'>
         <h2 className={styles.heading}>TEAM</h2>
         <div className='col-md-6 col-lg-4'>
