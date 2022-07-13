@@ -5,6 +5,7 @@ import styles from '../styles/Home.module.css'
 import { Navbar } from '../components/navbar/navbar';
 import { Team } from '../components/team/team';
 import { Professions } from '../components/professions/professions';
+import { Contact } from '../components/contact/contact';
 
 const Home: NextPage = () => {
   return (
@@ -31,6 +32,7 @@ const Home: NextPage = () => {
       </div>
       <Professions />
       <Team />
+      <Contact />
     
       <main className={styles.main}>
         <h1 className={styles.title}>

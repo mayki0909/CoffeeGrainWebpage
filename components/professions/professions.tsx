@@ -5,7 +5,7 @@ import styles from './professions.module.css';
 export const Professions: NextComponentType = () => {
 
   return (
-    <div className='container'>
+    <div id='about' className='container'>
       <div className='row'>
         <div className='col-xs-12 col-lg-6'>
           <div className={styles.card}>
