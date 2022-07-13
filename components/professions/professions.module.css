@@ -1,0 +1,25 @@
+.card {
+  border: 2px solid white;
+  padding: 15px;
+  border-radius: 40px;
+  margin: 30px;
+  -webkit-box-shadow: 0px 0px 16px 5px rgba(142,101,73,0.6); 
+  box-shadow: 0px 0px 16px 5px rgba(142,101,73,0.6);
+}
+
+.title {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  color: #8E6549;
+  margin: 0px;
+  padding: 0px;
+}
+
+.description {
+  font-size: 28px;
+  /* font-weight: bold; */
+  /* text-align: center; */
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
