@@ -4,6 +4,7 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import { Navbar } from '../components/navbar/navbar';
 import { Team } from '../components/team/team';
+import { Professions } from '../components/professions/professions';
 
 const Home: NextPage = () => {
   return (
@@ -28,7 +29,7 @@ const Home: NextPage = () => {
           </div>
         </div>
       </div>
-
+      <Professions />
       <Team />
     
       <main className={styles.main}>
