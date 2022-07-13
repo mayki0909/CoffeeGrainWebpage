@@ -3,8 +3,9 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import { Navbar } from '../components/navbar/navbar';
-import { Team } from '../components/team/team';
 import { Professions } from '../components/professions/professions';
+import { Projects } from '../components/projects/projects';
+import { Team } from '../components/team/team';
 import { Contact } from '../components/contact/contact';
 
 const Home: NextPage = () => {
@@ -31,15 +32,15 @@ const Home: NextPage = () => {
         </div>
       </div>
       <Professions />
+      <Projects />
       <Team />
       <Contact />
     
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to Coffee Grain Studios!
+          Website is under construction!
         </h1>
         <iframe src="https://giphy.com/embed/q0eh4TU8OMXRu" width="264" height="480" frameBorder="0" className="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/q0eh4TU8OMXRu">via GIPHY</a></p>
-        
       </main>
 
       <footer className={styles.footer}>
