@@ -14,3 +14,31 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.spacer {
+  aspect-ratio: 300/100;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.wave1 {
+  background-image: url('../public/images/waves/wavesHaiki.svg')
+}
+
+.wave2 {
+  background-image: url('../public/images/waves/wavesHaiki2.svg')
+}
+
+.wave3 {
+  background-image: url('../public/images/waves/wavesHaiki3.svg')
+}
+
+.flip {
+  transform: rotate(180deg);
+}
+
+.backgroundBrown {
+  background-color: #8E6549;
+}

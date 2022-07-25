@@ -8,7 +8,7 @@ export const Projects: NextComponentType = () => {
       "metadata": {
           "images": {
               "url": "https://cdn.cosmicjs.com/f3aa0fb0-02dd-11ed-b7be-d956591ad437-AXMElectric.png",
-              "imgix_url": "https://imgix.cosmicjs.com/f3aa0fb0-02dd-11ed-b7be-d956591ad437-AXMElectric.png"
+              "imgix_url": "https://imgix.cosmicjs.com/7132c9f0-08ff-11ed-b7be-d956591ad437-AXMElectric.webp"
           },
           "link": "https://axm-electric.com",
           "profession": {
@@ -93,7 +93,7 @@ export const Projects: NextComponentType = () => {
         <div className='carousel'>
           <div className="carousel-inner">
             <div className="carousel-item active">
-              <img className="d-block w-100" src={items[active].metadata.images.imgix_url} alt="Project active image"/>
+              <img className="d-block w-100" src={items[active].metadata.images.imgix_url} alt="Project active image" width={'100%'} height={'100%'}/>
             </div>
           </div>
           <a className="carousel-control-prev" onClick={()=>prev()}>

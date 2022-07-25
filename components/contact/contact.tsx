@@ -37,7 +37,7 @@ export const Contact: NextComponentType = () => {
         </div>
         <div className='col-md-6'>
           <div className='row'>
-            <img className={styles.image} src="/images/Error404.png" alt="Spilled coffee" />
+            <img className={styles.image} src="/images/Error404.webp" alt="Spilled coffee" />
           </div>
         </div>
       </div>

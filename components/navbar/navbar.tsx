@@ -7,7 +7,7 @@ export const Navbar: NextComponentType = () => {
   const [open, setOpen] = useState(false);
   return (
     <>
-      <nav className={`d-none d-lg-flex justify-content-end`}>
+      <nav className={`d-none d-lg-flex justify-content-center`}>
         <a className={styles.desktopNavItem} href="#about">ABOUT</a>
         <a className={styles.desktopNavItem} href="#projects">PROJECTS</a>
         <a className={styles.desktopNavItem} href="#team">TEAM</a>
