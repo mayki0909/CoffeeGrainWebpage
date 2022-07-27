@@ -23,6 +23,33 @@ a {
   background-size: cover;
 }
 
+.wave {
+  background: url('../public/images/waves/wavesHaiki.svg') repeat-x; 
+  opacity:1;
+  background-color: #fff;
+  height: 600px;
+  animation: wave 5s cubic-bezier( 0.36, 0.45, 0.63, 0.82) infinite;
+  transform: translate3d(0, 0, 0);
+}
+
+@keyframes wave {
+  0% {
+    background-position: 0 0;
+  }
+  25% {
+    background-position: 150% 0; 
+  }
+  50% {
+    background-position: 280% 0; 
+  }
+  75% {
+    background-position: 400% 0; 
+  }
+  100% {
+    background-position: 550% 0; 
+  }
+} 
+
 .wave1 {
   background-image: url('../public/images/waves/wavesHaiki.svg')
 }
@@ -36,9 +63,16 @@ a {
 }
 
 .flip {
+  /* animation-direction: reverse; */
   transform: rotate(180deg);
 }
 
 .backgroundBrown {
-  background-color: #8E6549;
+  background-color: #8E6549 !important;
+}
+
+#featured, #projects, #about, #team, #contact, #footer {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
 }

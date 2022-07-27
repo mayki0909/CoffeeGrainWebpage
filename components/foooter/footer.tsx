@@ -5,7 +5,7 @@ import styles from './footer.module.css';
 export const Footer: NextComponentType = () => {
 
   return (
-    <footer className='backgroundBrown'>
+    <footer id='footer' className='backgroundBrown'>
       <div className='spacer wave3'></div>
       <div className='container'>
         <div className='row'>

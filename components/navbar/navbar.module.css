@@ -1,8 +1,21 @@
+.navbar {
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+}
+.navLogo {
+  position: absolute;
+  width: 160px;
+  left: 50px;
+  top: -40px;
+  float: left;
+}
+
 .desktopNavItem {
   color: white;
   font-weight: bold;
   font-size: 25px;
-  margin-left: 50px;
+  margin-right: 55px;
   padding-top: 20px;
 }
 
@@ -24,7 +37,7 @@
   width: 100%;
 }
 .mobileNavItem {
-  background-color: #fff;
+  background-color: rgb(0, 0, 0);
   text-decoration: none;
   color: #8E6549;
   font-weight: bold;
@@ -34,4 +47,8 @@
 }
 .mobileNavItem:hover, .mobileNavItem:active {
   color: #333333
+}
+
+.white {
+  border-top: 1px solid #D9D9D9;
 }

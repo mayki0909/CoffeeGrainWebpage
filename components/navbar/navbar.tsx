@@ -6,13 +6,15 @@ import styles from './navbar.module.css';
 export const Navbar: NextComponentType = () => {
   const [open, setOpen] = useState(false);
   return (
-    <>
+    <div className={styles.navbar}>
       <nav className={`d-none d-lg-flex justify-content-center`}>
+        <img className={styles.navLogo} src="/images/LogoBlack.webp" alt="Coffee Grain Studios logo" />
         <a className={styles.desktopNavItem} href="#about">ABOUT</a>
         <a className={styles.desktopNavItem} href="#projects">PROJECTS</a>
         <a className={styles.desktopNavItem} href="#team">TEAM</a>
         <a className={styles.desktopNavItem} href="#contact">CONTACT</a>
       </nav>
+        <hr className={`d-none d-lg-flex justify-content-center ${styles.white}`}/>
 
       <nav className={`d-flex d-lg-none ${styles.mobileNavToggle}`}>
           <svg onClick={()=>setOpen(!open)} xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" className="bi bi-menu-up" viewBox="0 0 16 16">
@@ -27,6 +29,6 @@ export const Navbar: NextComponentType = () => {
           <a className={styles.mobileNavItem} href="#contact">CONTACT</a>
         </div>
       )}
-    </>
+    </div>
   )
 }
