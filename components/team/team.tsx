@@ -6,52 +6,58 @@ import styles from './team.module.css';
 export const Team: NextComponentType = () => {
 
   return (
-    <div id='team' className='container mt-5'>
-      <div className='row'>
-        <h2 className={styles.heading}>TEAM</h2>
-        <div className='col-md-6 col-lg-4'>
-          <div className={styles.card}>
-            <img className={styles.teamImage} src="/images/Miha.png" alt="Miha Žnidar" />
-            <p className={styles.name}>Name Surname</p>
-            <p className={styles.title}>FULL STACK</p>
+    <section id='team'>
+      <div className='wave'></div>
+      <div  className='backgroundBrown'>
+        <div className='container'>
+        <div className='row'>
+          {/* <h2 className={styles.heading}>TEAM</h2> */}
+          <div className='col-md-6 col-lg-4'>
+            <div className={styles.card}>
+              <img className={styles.teamImage} src="/images/Miha.webp" alt="Miha Žnidar" />
+              <p className={styles.name}>Name Surname</p>
+              <p className={styles.title}>FULL STACK</p>
+            </div>
+          </div>
+          <div className='col-md-6 col-lg-4'>
+            <div className={styles.card}>
+              <img className={styles.teamImage} src="/images/Miha.webp" alt="Miha Žnidar" />
+              <p className={styles.name}>Name Surname</p>
+              <p className={styles.title}>FULL STACK</p>
+            </div>
+          </div>
+          <div className='col-md-6 col-lg-4'>
+            <div className={styles.card}>
+              <img className={styles.teamImage} src="/images/Miha.webp" alt="Miha Žnidar" />
+              <p className={styles.name}>Name Surname</p>
+              <p className={styles.title}>FULL STACK</p>
+            </div>
+          </div>
+          <div className='col-md-6 col-lg-4'>
+            <div className={styles.card}>
+              <img className={styles.teamImage} src="/images/Miha.webp" alt="Miha Žnidar" />
+              <p className={styles.name}>Name Surname</p>
+              <p className={styles.title}>FULL STACK</p>
+            </div>
+          </div>
+          <div className='col-md-6 col-lg-4'>
+            <div className={styles.card}>
+              <img className={styles.teamImage} src="/images/Miha.webp" alt="Miha Žnidar" />
+              <p className={styles.name}>Name Surname</p>
+              <p className={styles.title}>FULL STACK</p>
+            </div>
+          </div>
+          <div className='col-md-6 col-lg-4'>
+            <div className={styles.card}>
+              <img className={styles.teamImage} src="/images/Miha.webp" alt="Miha Žnidar" />
+              <p className={styles.name}>Name Surname</p>
+              <p className={styles.title}>FULL STACK</p>
+            </div>
           </div>
         </div>
-        <div className='col-md-6 col-lg-4'>
-          <div className={styles.card}>
-            <img className={styles.teamImage} src="/images/Miha.png" alt="Miha Žnidar" />
-            <p className={styles.name}>Name Surname</p>
-            <p className={styles.title}>FULL STACK</p>
-          </div>
-        </div>
-        <div className='col-md-6 col-lg-4'>
-          <div className={styles.card}>
-            <img className={styles.teamImage} src="/images/Miha.png" alt="Miha Žnidar" />
-            <p className={styles.name}>Name Surname</p>
-            <p className={styles.title}>FULL STACK</p>
-          </div>
-        </div>
-        <div className='col-md-6 col-lg-4'>
-          <div className={styles.card}>
-            <img className={styles.teamImage} src="/images/Miha.png" alt="Miha Žnidar" />
-            <p className={styles.name}>Name Surname</p>
-            <p className={styles.title}>FULL STACK</p>
-          </div>
-        </div>
-        <div className='col-md-6 col-lg-4'>
-          <div className={styles.card}>
-            <img className={styles.teamImage} src="/images/Miha.png" alt="Miha Žnidar" />
-            <p className={styles.name}>Name Surname</p>
-            <p className={styles.title}>FULL STACK</p>
-          </div>
-        </div>
-        <div className='col-md-6 col-lg-4'>
-          <div className={styles.card}>
-            <img className={styles.teamImage} src="/images/Miha.png" alt="Miha Žnidar" />
-            <p className={styles.name}>Name Surname</p>
-            <p className={styles.title}>FULL STACK</p>
-          </div>
         </div>
       </div>
-    </div>
+      <div className='waveBottom'></div>
+    </section>
   )
 }

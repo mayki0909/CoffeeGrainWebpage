@@ -1,0 +1,17 @@
+{
+  "short_name": "CGS",
+  "name": "Coffee Grain Studios - Digital agency",
+  "description": "Coffee Grain Studios is digital agency, created by ex-classmates from Slovenia. It includes people with different skillset from digital space.",
+  "icons": [
+    {
+      "src": "/images/LogoBlack.png",
+      "type": "image/png",
+      "sizes": "500x500"
+    }
+  ],
+  "start_url": "/?source=pwa",
+  "background_color": "#3367D6",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#3367D6"
+}

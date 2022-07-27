@@ -8,7 +8,7 @@ export const Projects: NextComponentType = () => {
       "metadata": {
           "images": {
               "url": "https://cdn.cosmicjs.com/f3aa0fb0-02dd-11ed-b7be-d956591ad437-AXMElectric.png",
-              "imgix_url": "https://imgix.cosmicjs.com/f3aa0fb0-02dd-11ed-b7be-d956591ad437-AXMElectric.png"
+              "imgix_url": "https://imgix.cosmicjs.com/7132c9f0-08ff-11ed-b7be-d956591ad437-AXMElectric.webp"
           },
           "link": "https://axm-electric.com",
           "profession": {
@@ -87,26 +87,28 @@ export const Projects: NextComponentType = () => {
   }
 
   return (
-    <div id='projects' className='container mt-5'>
-      <h2 className={styles.heading}>PROJECTS</h2>
-      <div className={styles.card}>
-        <div className='carousel'>
-          <div className="carousel-inner">
-            <div className="carousel-item active">
-              <img className="d-block w-100" src={items[active].metadata.images.imgix_url} alt="Project active image"/>
+    <section id='projects' className='backgroundWhite'>
+      <div className='container pt-5'>
+        <h2 className={styles.heading}>PROJECTS</h2>
+        <div className={styles.card}>
+          <div className='carousel'>
+            <div className="carousel-inner">
+              <div className="carousel-item active">
+                <img className="d-block w-100" src={items[active].metadata.images.imgix_url} alt="Project active image" width={'100%'} height={'100%'}/>
+              </div>
             </div>
+            <a className="carousel-control-prev" onClick={()=>prev()}>
+              <span className="carousel-control-prev-icon"></span>
+            </a>
+            <a className="carousel-control-next" onClick={()=>next()}>
+              <span className="carousel-control-next-icon"></span>
+            </a>
           </div>
-          <a className="carousel-control-prev" onClick={()=>prev()}>
-            <span className="carousel-control-prev-icon"></span>
-          </a>
-          <a className="carousel-control-next" onClick={()=>next()}>
-            <span className="carousel-control-next-icon"></span>
-          </a>
+          <h3>{items[active].metadata.name}</h3>
+          <h4>{items[active].metadata.profession.metadata.name}</h4>
+          <h5>{items[active].metadata.description}</h5>
         </div>
-        <h3>{items[active].metadata.name}</h3>
-        <h4>{items[active].metadata.profession.metadata.name}</h4>
-        <h5>{items[active].metadata.description}</h5>
       </div>
-    </div>
+    </section>
   )
 }
