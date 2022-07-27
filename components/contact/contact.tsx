@@ -4,7 +4,7 @@ import styles from './contact.module.css';
 export const Contact: NextComponentType = () => {
 
   return (
-    <section id='contact'>
+    <section id='contact' className='backgroundWhite'>
       <div className='container pt-5'>
         <div className='row'>
           <h2 className={styles.heading}>Interested in <br/>working together?</h2>

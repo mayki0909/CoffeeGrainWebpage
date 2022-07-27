@@ -87,7 +87,7 @@ export const Projects: NextComponentType = () => {
   }
 
   return (
-    <section id='projects'>
+    <section id='projects' className='backgroundWhite'>
       <div className='container pt-5'>
         <h2 className={styles.heading}>PROJECTS</h2>
         <div className={styles.card}>

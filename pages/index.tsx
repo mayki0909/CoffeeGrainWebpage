@@ -7,8 +7,16 @@ import { Team } from '../components/team/team';
 import { Contact } from '../components/contact/contact';
 import { Footer } from '../components/foooter/footer';
 import { Featured } from '../components/featured/featured';
+import { useEffect } from 'react';
 
 const Home: NextPage = () => {
+  function scrolling() {
+    console.log(window.scrollY, window.scrollX)
+  }
+  useEffect(() => {
+    window.addEventListener('scroll', scrolling, false);
+  })
+
   return (
     <>
       <Head>
@@ -25,10 +33,10 @@ const Home: NextPage = () => {
       <main>
         <Navbar />
         <Featured />
+        <Team />
         <Contact />
         <Professions />
         <Projects />
-        <Team />
         <Footer />
       </main>
     </>

@@ -1,9 +1,14 @@
 html,
 body {
+  height: 100%;
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 a {
@@ -24,31 +29,36 @@ a {
 }
 
 .wave {
-  background: url('../public/images/waves/wavesHaiki.svg') repeat-x; 
-  opacity:1;
-  background-color: #fff;
-  height: 600px;
-  animation: wave 5s cubic-bezier( 0.36, 0.45, 0.63, 0.82) infinite;
-  transform: translate3d(0, 0, 0);
+  position: absolute;
+  background: url('../public/images/waves/waves.svg') repeat-x; 
+  top: -160px;
+  /* padding-top: 184px; */
+  width: 5000px;
+  height: 184px;
+  animation: wave 3s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
+  background-color: transparent;
 }
 
 @keyframes wave {
   0% {
-    background-position: 0 0;
-  }
-  25% {
-    background-position: 150% 0; 
-  }
-  50% {
-    background-position: 280% 0; 
-  }
-  75% {
-    background-position: 400% 0; 
+    margin-left: 0;
   }
   100% {
-    background-position: 550% 0; 
+    margin-left: -1000px;
   }
-} 
+}
+
+.waveBottom {
+  position: absolute;
+  background: url('../public/images/waves/waves.svg') repeat-x; 
+  bottom: -184px;
+  height: 184px;
+  width: 5000px;
+  animation: wave 3s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
+  background-color: transparent;
+  transform: rotate(180deg);
+}
+
 
 .wave1 {
   background-image: url('../public/images/waves/wavesHaiki.svg')
@@ -63,16 +73,23 @@ a {
 }
 
 .flip {
-  /* animation-direction: reverse; */
   transform: rotate(180deg);
 }
 
+.backgroundWhite {
+ background-color: #fff;
+}
+
 .backgroundBrown {
-  background-color: #8E6549 !important;
+  background-color: #8E6549;
 }
 
 #featured, #projects, #about, #team, #contact, #footer {
   position: sticky;
   top: 0;
-  background-color: #fff;
+  min-height: 100%;
+}
+
+#team {
+  margin-bottom: 400px;
 }
