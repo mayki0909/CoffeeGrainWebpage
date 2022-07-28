@@ -28,15 +28,24 @@ a {
   background-size: cover;
 }
 
+.visible {
+  transition: opacity 0.7s; 
+  opacity: 1;
+}
+
+.hidden {
+  transition: opacity 3s; 
+  opacity: 0;
+}
+
 .wave {
   position: absolute;
+  z-index: 2;
   background: url('../public/images/waves/waves.svg') repeat-x; 
-  top: -160px;
-  /* padding-top: 184px; */
-  width: 5000px;
+  top: -183px;
   height: 184px;
+  width: 5000px;
   animation: wave 3s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
-  background-color: transparent;
 }
 
 @keyframes wave {
@@ -50,12 +59,12 @@ a {
 
 .waveBottom {
   position: absolute;
-  background: url('../public/images/waves/waves.svg') repeat-x; 
-  bottom: -184px;
+  z-index: 2;
+  background: url('../public/images/waves/waves.svg') repeat-x;
+  bottom: -183px;
   height: 184px;
   width: 5000px;
   animation: wave 3s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
-  background-color: transparent;
   transform: rotate(180deg);
 }
 
@@ -84,12 +93,25 @@ a {
   background-color: #8E6549;
 }
 
-#featured, #projects, #about, #team, #contact, #footer {
+/* #featured, #about, #team, #contact, #footer {
   position: sticky;
   top: 0;
   min-height: 100%;
-}
+} */
 
-#team {
-  margin-bottom: 400px;
+#team, #projects {
+  margin-top: 184px;
+  margin-bottom: 184px;
+  position: sticky;
+} 
+
+
+.button {
+  font-weight: 400px;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 5px 20px;
+  background-color: #fff;
+  border: 1px solid #D9D9D9;
+  border-radius: 100px;
 }

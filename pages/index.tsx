@@ -7,15 +7,31 @@ import { Team } from '../components/team/team';
 import { Contact } from '../components/contact/contact';
 import { Footer } from '../components/foooter/footer';
 import { Featured } from '../components/featured/featured';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 const Home: NextPage = () => {
-  function scrolling() {
-    console.log(window.scrollY, window.scrollX)
-  }
-  useEffect(() => {
-    window.addEventListener('scroll', scrolling, false);
-  })
+  // const [scroll, setScroll] = useState(0);
+  // function scrolling() {
+  //   const waves = document.getElementsByClassName('wave')
+  //   const waveBottom = document.getElementsByClassName('waveBottom')
+  //   Array.from(waves).forEach(wave=>wave.className='wave visible')
+  //   Array.from(waveBottom).forEach(wave=>wave.className='waveBottom visible')
+  //   setScroll(window.scrollY)
+  // }
+  // useEffect(() => {
+  //   window.addEventListener('scroll', scrolling , false);
+  // })
+  // useEffect(() => {
+  //   const timeout = setTimeout(()=>{},100)
+  //   return () => {
+  //     clearTimeout(timeout)
+  //     const waves = document.getElementsByClassName('wave')
+  //     const waveBottom = document.getElementsByClassName('waveBottom')
+  //     Array.from(waves).forEach(wave=>wave.className='wave hidden')
+  //     Array.from(waveBottom).forEach(wave=>wave.className='waveBottom hidden')
+  //   }
+  // }, [scroll])
+
 
   return (
     <>
@@ -33,10 +49,10 @@ const Home: NextPage = () => {
       <main>
         <Navbar />
         <Featured />
-        <Team />
+        <Projects />
         <Contact />
         <Professions />
-        <Projects />
+        <Team />
         <Footer />
       </main>
     </>
