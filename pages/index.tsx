@@ -50,7 +50,7 @@ const Home: NextPage = () => {
         <Navbar />
         <Featured />
         <Projects />
-        <Contact />
+        {/* <Contact /> */}
         <Professions />
         <Team />
         <Footer />

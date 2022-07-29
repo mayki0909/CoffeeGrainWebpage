@@ -7,57 +7,26 @@ export const Team: NextComponentType = () => {
 
   return (
     <section id='team'>
-      <div className='wave'></div>
-      <div  className='backgroundBrown'>
-        <div className='container'>
+      <div className='container'>
         <div className='row'>
-          {/* <h2 className={styles.heading}>TEAM</h2> */}
+          <h2 className={styles.heading}>MEET THE TEAM</h2>
           <div className='col-md-6 col-lg-4'>
-            <div className={styles.card}>
-              <img className={styles.teamImage} src="/images/Miha.webp" alt="Miha Žnidar" />
-              <p className={styles.name}>Name Surname</p>
-              <p className={styles.title}>FULL STACK</p>
-            </div>
+            <img className={styles.teamImage} src="/images/TeamMember.png" alt="Miha Žnidar" />
+            <p className={styles.name}>Name Surname</p>
+            <p className={styles.title}>Professional singer / Drifter / Newspapers seller</p>
           </div>
           <div className='col-md-6 col-lg-4'>
-            <div className={styles.card}>
-              <img className={styles.teamImage} src="/images/Miha.webp" alt="Miha Žnidar" />
-              <p className={styles.name}>Name Surname</p>
-              <p className={styles.title}>FULL STACK</p>
-            </div>
+            <img className={styles.teamImage} src="/images/TeamMember.png" alt="Miha Žnidar" />
+            <p className={styles.name}>Name Surname</p>
+            <p className={styles.title}>Professional singer / Drifter / Newspapers seller</p>
           </div>
           <div className='col-md-6 col-lg-4'>
-            <div className={styles.card}>
-              <img className={styles.teamImage} src="/images/Miha.webp" alt="Miha Žnidar" />
-              <p className={styles.name}>Name Surname</p>
-              <p className={styles.title}>FULL STACK</p>
-            </div>
+            <img className={styles.teamImage} src="/images/TeamMember.png" alt="Miha Žnidar" />
+            <p className={styles.name}>SANDI SLJADOLJERDAR</p>
+            <p className={styles.title}>Professional singer / Drifter / Newspapers seller</p>
           </div>
-          <div className='col-md-6 col-lg-4'>
-            <div className={styles.card}>
-              <img className={styles.teamImage} src="/images/Miha.webp" alt="Miha Žnidar" />
-              <p className={styles.name}>Name Surname</p>
-              <p className={styles.title}>FULL STACK</p>
-            </div>
-          </div>
-          <div className='col-md-6 col-lg-4'>
-            <div className={styles.card}>
-              <img className={styles.teamImage} src="/images/Miha.webp" alt="Miha Žnidar" />
-              <p className={styles.name}>Name Surname</p>
-              <p className={styles.title}>FULL STACK</p>
-            </div>
-          </div>
-          <div className='col-md-6 col-lg-4'>
-            <div className={styles.card}>
-              <img className={styles.teamImage} src="/images/Miha.webp" alt="Miha Žnidar" />
-              <p className={styles.name}>Name Surname</p>
-              <p className={styles.title}>FULL STACK</p>
-            </div>
-          </div>
-        </div>
         </div>
       </div>
-      <div className='waveBottom'></div>
     </section>
   )
 }

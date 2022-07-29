@@ -99,7 +99,7 @@ a {
   min-height: 100%;
 } */
 
-#team, #projects {
+#projects {
   margin-top: 184px;
   margin-bottom: 184px;
   position: sticky;
@@ -114,4 +114,8 @@ a {
   background-color: #fff;
   border: 1px solid #D9D9D9;
   border-radius: 100px;
+}
+
+section {
+  margin-top: 150px;
 }
