@@ -21,7 +21,7 @@ export const Projects: NextComponentType = () => {
             </a>
           </div>
           <div className='col-6'>
-            <img className={styles.image} src='/images/projects.png' alt='Projects featured image' />
+            <img className={styles.image} src='/images/Projects.png' alt='Projects featured image' />
           </div>
         </div>
       </div>
