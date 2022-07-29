@@ -47,3 +47,16 @@
   margin: 10px;
   padding: 12px;
 }
+
+.socialsText{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: #FFF;
+  margin: 0px;
+}
+
+.icon{
+  max-width: 32px;
+}
