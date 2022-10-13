@@ -35,8 +35,8 @@
 
   .scrollDown {
     max-width: 70px;
-    margin-top: 140px;
-    margin-bottom: 170px;
+    margin-top: 50px;
+    margin-bottom: 80px;
   }
 }
 
@@ -70,7 +70,7 @@
 
   .scrollDown {
     max-width: 100px;
-    margin-top: 50px;
+    margin-top: 140px;
     margin-bottom: 170px;
   }
 }

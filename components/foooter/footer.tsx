@@ -19,7 +19,7 @@ export const Footer: NextComponentType = () => {
         <div className='row d-flex justify-content-end'>
           <hr className={styles.line} />
           <div className='col-9'>
-            <div className='d-flex'>
+            <div className='d-flex flex-wrap'>
               <p className={styles.contactItem}>info@coffeegrainstudios.com</p>
               <p className={styles.contactItem}>+384 234 032</p>
             </div>

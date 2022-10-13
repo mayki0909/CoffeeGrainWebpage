@@ -7,8 +7,8 @@ export const Projects: NextComponentType = () => {
       <div className='wave'></div>
       <div className='container'>
         <div className='row'>
-          <div className='col-6'>
-            <p className={styles.recent}>RECENT PROJECTS</p>
+          <p className={styles.recent}>RECENT PROJECTS</p>
+          <div className='col-sm-6'>
             <p className={styles.projectName}>01 Project name</p>
             <h2 className={styles.title}>Lorem Ipsum is simply dummy text</h2>
             <p className={styles.description}>
@@ -20,7 +20,7 @@ export const Projects: NextComponentType = () => {
               View the project
             </a>
           </div>
-          <div className='col-6'>
+          <div className='col-sm-6'>
             <img className={styles.image} src='/images/Projects.png' alt='Projects featured image' />
           </div>
         </div>

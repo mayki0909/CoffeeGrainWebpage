@@ -46,22 +46,27 @@ a {
   opacity: 0;
 }
 
+.hide-overflow {
+  overflow: hidden !important;
+}
+
 .wave {
   position: absolute;
   z-index: 2;
   background: url('../public/images/waves/waves.svg') repeat-x; 
   top: -183px;
   height: 184px;
-  width: 5000px;
-  animation: wave 3s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
+  width: 100%;
+  animation: wave 5s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
+  overflow: hidden;
 }
 
 @keyframes wave {
   0% {
-    margin-left: 0;
+    background-position-x: 2500px;
   }
   100% {
-    margin-left: -1000px;
+    background-position-x: 0;
   }
 }
 
@@ -71,9 +76,10 @@ a {
   background: url('../public/images/waves/waves.svg') repeat-x;
   bottom: -183px;
   height: 184px;
-  width: 5000px;
-  animation: wave 3s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
+  width: 100%;
+  animation: wave 5s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
   transform: rotate(180deg);
+  overflow: hidden;
 }
 
 
@@ -105,11 +111,16 @@ section {
   margin-top: 150px;
 }
 
-#projects, #footer {
+#projects {
   margin-top: 220px;
   margin-bottom: 184px;
   position: sticky;
 } 
+
+#footer {
+  margin-top: 220px;
+  position: sticky;
+}
 
 #featured {
   margin: 0px;
