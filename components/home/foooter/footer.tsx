@@ -1,4 +1,5 @@
 import { NextComponentType } from 'next';
+import { Wave } from '../../shared/wave/wave';
 import styles from './footer.module.css';
 
 
@@ -6,7 +7,7 @@ export const Footer: NextComponentType = () => {
 
   return (
     <footer id='footer' className='backgroundBrown'>
-      <div className='wave'></div>
+      <Wave />
       <div className='container'>
         <div className='row'>
           <div className='col-md-3 col-lg-3'>
@@ -16,22 +17,24 @@ export const Footer: NextComponentType = () => {
             <p className={styles.heading}>LET&#39;S WORK TOGETHER</p>
           </div>
         </div>
-        <div className='row d-flex justify-content-end'>
-          <hr className={styles.line} />
+        <div className={`row d-flex justify-content-start ${styles.smallRow}`}>
+          <div className='col'>
+            <hr className={styles.line} />
+            <div className={styles.contactCircle}>
+              <p>GET IN TOUCH</p>
+            </div>
+          </div>
+        </div>
+        <div className='row d-flex justify-content-start'>
           <div className='col-9'>
             <div className='d-flex flex-wrap'>
               <p className={styles.contactItem}>info@coffeegrainstudios.com</p>
               <p className={styles.contactItem}>+384 234 032</p>
             </div>
           </div>
-          <div className='col-3'>
-            <div className={styles.contactCircle}>
-              <p>GET IN TOUCH</p>
-            </div>
-          </div>
         </div>
-        <div className='row pb-5'>
-          <div className='offset-9 col-3'>
+        <div className='row pb-5 flex-row-reverse'>
+          <div className='col-md-3 ml-5'>
             <p className={styles.socialsText}>SOCIALS</p>
             <div className='row'>
               <div className='col-2'>

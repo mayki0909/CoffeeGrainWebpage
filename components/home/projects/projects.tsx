@@ -1,10 +1,11 @@
 import { NextComponentType } from 'next';
+import { Wave } from '../../shared/wave/wave';
 import styles from './projects.module.css';
 
 export const Projects: NextComponentType = () => {
   return (
     <section id='projects' className='backgroundBrown'>
-      <div className='wave'></div>
+      <Wave />
       <div className='container'>
         <div className='row'>
           <p className={styles.recent}>RECENT PROJECTS</p>
@@ -25,7 +26,7 @@ export const Projects: NextComponentType = () => {
           </div>
         </div>
       </div>
-      <div className='waveBottom'></div>
+      <Wave upsideDown={true} />
     </section>
   )
 }

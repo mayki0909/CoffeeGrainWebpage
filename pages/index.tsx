@@ -1,13 +1,11 @@
-import type { NextPage } from 'next'
 import Head from 'next/head'
-import { Navbar } from '../components/navbar/navbar';
-import { Professions } from '../components/professions/professions';
-import { Projects } from '../components/projects/projects';
-import { Team } from '../components/team/team';
-import { Contact } from '../components/contact/contact';
-import { Footer } from '../components/foooter/footer';
-import { Featured } from '../components/featured/featured';
-import { useEffect, useState } from 'react';
+import type { NextPage } from 'next'
+import { Navbar } from '../components/home/navbar/navbar';
+import { Professions } from '../components/home/professions/professions';
+import { Projects } from '../components/home/projects/projects';
+import { Team } from '../components/home/team/team';
+import { Footer } from '../components/home/foooter/footer';
+import { Featured } from '../components/home/featured/featured';
 
 const Home: NextPage = () => {
   // const [scroll, setScroll] = useState(0);

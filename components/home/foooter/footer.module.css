@@ -27,6 +27,7 @@
   right: 8%;
   width: 150px;
   height: 150px;
+  float: right;
 }
 
 .contactCircle p {
@@ -59,4 +60,8 @@
 
 .icon{
   max-width: 32px;
+}
+
+.smallRow {
+  height: 20px;
 }
