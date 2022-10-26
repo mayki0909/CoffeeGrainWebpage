@@ -6,9 +6,10 @@ export const Featured: NextComponentType = () => {
   return (
     <section id='featured'>
       <img className={styles.waves} src='/images/heronavigacija.png' alt='Spilled coffee'/>
-      <div className='container'>
+      <div className='container-fluid'>
         <div className='row'>
-          <div className={`col-12 col-lg-8 ${styles.content}`}>
+          <div className='col'></div>
+          <div className={`col-11 ${styles.content}`}>
             <h1>Poljita Kahfah</h1>
             <p>
               There is a theory which states that if ever anyone discovers exactly what 
@@ -18,7 +19,7 @@ export const Featured: NextComponentType = () => {
             </p>
             <a href="#contact">
               <button>
-                Get in touch
+                Get in touch   ---&gt;
               </button>
             </a>
           </div>
