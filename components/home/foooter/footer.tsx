@@ -28,15 +28,15 @@ export const Footer: NextComponentType = () => {
         <div className='row d-flex justify-content-start'>
           <div className='col-9'>
             <div className='d-flex flex-wrap'>
-              <p className={styles.contactItem}>info@coffeegrainstudios.com</p>
-              <p className={styles.contactItem}>+384 234 032</p>
+              <a href='mailto:info@coffeegrainstudios.com' className={styles.contactItem}>info@coffeegrainstudios.com</a>
+              <a href='callto:+38642340320' className={styles.contactItem}>+386 42 340 320</a>
             </div>
           </div>
         </div>
         <div className='row pb-5 flex-row-reverse'>
           <div className='col-md-3 ml-5'>
             <p className={styles.socialsText}>SOCIALS</p>
-            <div className='row'>
+            <div className='row justify-content-center'>
               <div className='col-2'>
                 <a href="">
                   <img className={styles.icon} src="/favicon.ico" alt="Social media icon" />

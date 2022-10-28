@@ -17,17 +17,7 @@
 }
 
 .contactCircle {
-  position: relative;
-  color:#fff;
-  background-color: #363738;
-  border-radius: 50%;
-  margin: 0px;
-  padding: 0px;
-  top: -93px;
-  right: 8%;
-  width: 150px;
-  height: 150px;
-  float: right;
+  display: none;
 }
 
 .contactCircle p {
@@ -49,6 +39,10 @@
   padding: 17px;
 }
 
+.contactItem:hover {
+  color: rgb(230, 230, 230);
+}
+
 .socialsText{
   font-style: normal;
   font-weight: 400;
@@ -64,4 +58,21 @@
 
 .smallRow {
   height: 20px;
+}
+
+@media screen and (min-width: 1000px) {
+  .contactCircle {
+    display: block;
+    position: relative;
+    color:#fff;
+    background-color: #363738;
+    border-radius: 50%;
+    margin: 0px;
+    padding: 0px;
+    top: -93px;
+    right: 8%;
+    width: 150px;
+    height: 150px;
+    float: right;
+  }
 }

@@ -10,7 +10,7 @@ type Props = {
 
 export const Project = ({title, name, description, projectLink, imageLink}: Props) => {
     return (
-        <div className='row g-5'>
+        <div className='row gy-5'>
           <div className='col-sm-6 p-3'>
             <p className={styles.projectName}>{name}</p>
             <h2 className={styles.title}>{title}</h2>

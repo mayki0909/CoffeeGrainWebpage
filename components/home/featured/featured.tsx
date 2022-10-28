@@ -24,7 +24,7 @@ export const Featured: NextComponentType = () => {
             </a>
           </div>
         </div>
-        <a className='row' href='#contact'>
+        <a className='row' href='#projects'>
           <img className={`mx-auto ${styles.scrollDown}`} src="/images/scrollDown.svg" alt="Scroll down" />
         </a>
       </div>
