@@ -8,7 +8,7 @@ type Props = {
 
 export const Profession = ({title, description, image}: Props) => {
     return (
-        <div className='col-xs-12 col-lg-4'>
+        <div className='xs-12'>
             <div className={styles.card}>
                 <img className={styles.image} src={image} />
                 <p className={styles.title}>{title}</p>
