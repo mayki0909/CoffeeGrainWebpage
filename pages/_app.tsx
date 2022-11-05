@@ -13,7 +13,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     if (768 <= window.innerWidth && window.innerWidth < 992) return setSize('md')
     if (992 <= window.innerWidth && window.innerWidth < 1200) return setSize('lg')
     if (992 <= window.innerWidth && window.innerWidth < 1200) return setSize('xl')
-    if (992 <= window.innerWidth && window.innerWidth < 1200) return setSize('xxl')
+    if (1200 <= window.innerWidth) return setSize('xxl')
   }
   
   useEffect(() => {
