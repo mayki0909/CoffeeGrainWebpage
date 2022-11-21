@@ -19,7 +19,7 @@ export const Featured: NextComponentType = () => {
             </p>
             <a href="#contact">
               <button>
-                Get in touch   ---&gt;
+                Get in touch &rarr;
               </button>
             </a>
           </div>
