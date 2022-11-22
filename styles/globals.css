@@ -1,3 +1,7 @@
+:root {
+  --dark-text: #363738;
+}
+
 html,
 body {
   height: 100%;
@@ -28,77 +32,6 @@ a {
   box-sizing: border-box;
 }
 
-.spacer {
-  aspect-ratio: 300/100;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.visible {
-  transition: opacity 0.7s; 
-  opacity: 1;
-}
-
-.hidden {
-  transition: opacity 3s; 
-  opacity: 0;
-}
-
-.hide-overflow {
-  overflow: hidden !important;
-}
-
-.wave {
-  position: absolute;
-  z-index: 2;
-  background: url('../public/images/waves/waves.svg') repeat-x; 
-  top: -183px;
-  height: 184px;
-  width: 100%;
-  animation: wave 5s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
-  overflow: hidden;
-}
-
-@keyframes wave {
-  0% {
-    background-position-x: 2500px;
-  }
-  100% {
-    background-position-x: 0;
-  }
-}
-
-.waveBottom {
-  position: absolute;
-  z-index: 2;
-  background: url('../public/images/waves/waves.svg') repeat-x;
-  bottom: -183px;
-  height: 184px;
-  width: 100%;
-  animation: wave 5s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
-  transform: rotate(180deg);
-  overflow: hidden;
-}
-
-
-.wave1 {
-  background-image: url('../public/images/waves/wavesHaiki.svg')
-}
-
-.wave2 {
-  background-image: url('../public/images/waves/wavesHaiki2.svg')
-}
-
-.wave3 {
-  background-image: url('../public/images/waves/wavesHaiki3.svg')
-}
-
-.flip {
-  transform: rotate(180deg);
-}
-
 .backgroundWhite {
  background-color: #fff;
 }
@@ -109,6 +42,10 @@ a {
 
 section {
   margin-top: 150px;
+}
+
+#services {
+  margin: 300px auto;
 }
 
 #projects {
