@@ -7,7 +7,7 @@
 }
 @media screen and (max-width: 1000px){
   .content {
-    margin-top: 180px;
+    margin-top: 220px;
   }
 
   .content h1 {
@@ -42,7 +42,7 @@
 
 @media screen and (min-width: 1000px) {
   .content {
-    margin-top: 390px;
+    margin-top: 280px;
   }
 
   .content h1 {

@@ -38,22 +38,22 @@ export const Footer: NextComponentType = () => {
             <p className={styles.socialsText}>SOCIALS</p>
             <div className='row justify-content-center'>
               <div className='col-2'>
-                <a href="">
+                <a href="https://insagram.com">
                   <img className={styles.icon} src="/favicon.ico" alt="Social media icon" />
                 </a>
               </div>
               <div className='col-2'>
-                <a href="">
+                <a href="https://insagram.com">
                   <img className={styles.icon} src="/favicon.ico" alt="Social media icon" />
                 </a>
               </div>
               <div className='col-2'>
-                <a href="">
+                <a href="https://insagram.com">
                   <img className={styles.icon} src="/favicon.ico" alt="Social media icon" />
                 </a>
               </div>
               <div className='col-2'>
-                <a href="">
+                <a href="https://insagram.com">
                   <img className={styles.icon} src="/favicon.ico" alt="Social media icon" />
                 </a>
               </div>
