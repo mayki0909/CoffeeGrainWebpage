@@ -2,9 +2,10 @@ import Head from 'next/head'
 import type { NextPage } from 'next'
 import { Navbar } from '../components/home/navbar/navbar';
 import { Featured } from '../components/home/featured/featured';
-import { Projects } from '../components/home/projects/projects'; 
+import { Projects } from '../components/home/projects/projects';
 import { Professions } from '../components/home/professions/professions';
-import { Team } from '../components/home/team/team'; 
+import { Services } from '../components/home/services/services';
+import { Team } from '../components/home/team/team';
 import { Footer } from '../components/home/foooter/footer';
 
 const Home: NextPage = () => {
@@ -49,8 +50,7 @@ const Home: NextPage = () => {
         <Navbar />
         <Featured />
         <Projects />
-        <Professions />
-        <Team />
+        <Services />
         <Footer />
       </main>
     </>

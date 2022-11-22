@@ -16,7 +16,7 @@ export const Project = ({title, name, description, projectLink, imageLink}: Prop
             <h2 className={styles.title}>{title}</h2>
             <p className={styles.description}>{description}</p>
             <a className={styles.button} href={projectLink}>
-              View the project
+              View the project &rarr;
             </a>
           </div>
           <div className='col-sm-6 p-3'>

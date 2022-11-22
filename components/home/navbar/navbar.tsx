@@ -14,7 +14,6 @@ export const Navbar: NextComponentType = () => {
         <a className={styles.desktopNavItem} href="#team">TEAM</a>
         <a className={styles.desktopNavItem} href="#contact">CONTACT</a>
       </nav>
-        <hr className={`d-none d-lg-flex justify-content-center ${styles.white}`}/>
 
       <nav className={`d-flex d-lg-none ${styles.mobileNavToggle}`}>
           <svg onClick={()=>setOpen(!open)} xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" className="bi bi-menu-up" viewBox="0 0 16 16">
