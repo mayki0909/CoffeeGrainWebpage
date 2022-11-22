@@ -1,47 +1,48 @@
 import Head from 'next/head'
 import type { NextPage } from 'next'
 import { Navbar } from '../components/home/navbar/navbar';
-import { Professions } from '../components/home/professions/professions';
-import { Projects } from '../components/home/projects/projects';
-import { Team } from '../components/home/team/team';
-import { Footer } from '../components/home/foooter/footer';
 import { Featured } from '../components/home/featured/featured';
+import { Projects } from '../components/home/projects/projects'; 
+import { Professions } from '../components/home/professions/professions';
+import { Team } from '../components/home/team/team'; 
+import { Footer } from '../components/home/foooter/footer';
 
 const Home: NextPage = () => {
-  // const [scroll, setScroll] = useState(0);
-  // function scrolling() {
-  //   const waves = document.getElementsByClassName('wave')
-  //   const waveBottom = document.getElementsByClassName('waveBottom')
-  //   Array.from(waves).forEach(wave=>wave.className='wave visible')
-  //   Array.from(waveBottom).forEach(wave=>wave.className='waveBottom visible')
-  //   setScroll(window.scrollY)
-  // }
-  // useEffect(() => {
-  //   window.addEventListener('scroll', scrolling , false);
-  // })
-  // useEffect(() => {
-  //   const timeout = setTimeout(()=>{},100)
-  //   return () => {
-  //     clearTimeout(timeout)
-  //     const waves = document.getElementsByClassName('wave')
-  //     const waveBottom = document.getElementsByClassName('waveBottom')
-  //     Array.from(waves).forEach(wave=>wave.className='wave hidden')
-  //     Array.from(waveBottom).forEach(wave=>wave.className='waveBottom hidden')
-  //   }
-  // }, [scroll])
-
+  
+  const metadata = {
+    title: 'Coffee Grain Studios - Digital agency',
+    description: 'Coffee Grain Studios is digital agency, created by ex-classmates from Slovenia. It includes people with different skillset from digital space.',
+    url: 'https://coffee-grain-webpage.vercel.app',
+    imageUrl: '/images/LogoBlack.png'
+  }
 
   return (
     <>
       <Head>
-        {/* TODO SEO AND METADATA */}
         <meta charSet='UTF-8' />
-        <meta httpEquiv='content-language' content='en'></meta>
-        <title>Coffee Grain Studios - Digital agency</title>
+        <meta httpEquiv='content-language' content='en' />
         <meta name='viewport' content='width=device-width, initial-scale=1' />
-        <meta name='description' content='Coffee Grain Studios is digital agency, created by ex-classmates from Slovenia. It includes people with different skillset from digital space.' />
         <link rel='icon' href='/favicon.ico' />
-        <link rel='manifest' href='/manifest.json'></link>
+        <link rel='manifest' href='/manifest.json' />
+  
+        {/* Primary Meta Tags */}
+        <title>{metadata.title}</title>
+        <meta name="title" content={metadata.title} />
+        <meta name="description" content={metadata.description} />
+
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={metadata.url} />
+        <meta property="og:title" content={metadata.title} />
+        <meta property="og:description" content={metadata.description} />
+        <meta property="og:image" content={`${metadata.url}${metadata.imageUrl}`} />
+
+        {/* Twitter */}
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content={metadata.url} />
+        <meta property="twitter:title" content={metadata.title} />
+        <meta property="twitter:description" content={metadata.description} />
+        <meta property="twitter:image" content={`${metadata.url}${metadata.imageUrl}`} />
       </Head>
 
       <main>
