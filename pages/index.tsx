@@ -9,8 +9,8 @@ import { Footer } from '../components/home/foooter/footer';
 const Home: NextPage = () => {
   
   const metadata = {
-    title: 'Coffee Grain Studios - Digital agency',
-    description: 'Coffee Grain Studios is digital agency, created by ex-classmates from Slovenia. It includes people with different skillset from digital space.',
+    title: 'Coffee Grain Studios - creative agency',
+    description: 'Coffee Grain Studios is creative agency, created by ex-classmates from Slovenia. It includes people with different skillset from digital space.',
     url: 'https://coffee-grain-webpage.vercel.app',
     imageUrl: '/images/LogoBlack.png'
   }

@@ -8,7 +8,7 @@ export const Services = () => {
         <div className='col-12 col-lg-5'>
           <p><strong>OUR SERVICES</strong></p>
           <h2 className={styles.h2}>Turning ideas into reality.</h2>
-          <p className={styles.text}>At our digital agency, we help you turn your idea into reality. We help you from the conception of the idea, through development, production and then promotion.</p>
+          <p className={styles.text}>At our creative agency, we help you turn your idea into reality. We help you from the conception of the idea, through development, production and then promotion.</p>
         </div>
         <div className='col-12 col-lg-7'>
           <div className='row'>
