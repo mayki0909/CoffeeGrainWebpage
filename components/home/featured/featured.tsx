@@ -10,12 +10,10 @@ export const Featured: NextComponentType = () => {
         <div className='row'>
           <div className='col'></div>
           <div className={`col-11 ${styles.content}`}>
-            <h1>Poljita Kahfah</h1>
+            <h1>Coffee Grain Studios <br/> Digital agency</h1>
             <p>
-              There is a theory which states that if ever anyone discovers exactly what 
-              the Universe is for and why it is here, it will instantly disappear and be 
-              replaced by something even more bizarre and inexplicable. There is another 
-              theory which states that this has already happened.
+              Coffee grains studio is a digital agency created by ambitious, resourceful friends 
+              from different digital fields who came together to work on new projects.
             </p>
             <a href="#contact">
               <button>
