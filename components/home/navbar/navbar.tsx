@@ -9,10 +9,9 @@ export const Navbar: NextComponentType = () => {
     <div className={styles.navbar}>
       <nav className={`d-none d-lg-flex justify-content-center`}>
         <img className={styles.navLogo} src="/images/LogoBlack.webp" alt="Coffee Grain Studios logo" />
-        <a className={styles.desktopNavItem} href="#about">ABOUT</a>
+        <a className={styles.desktopNavItem} href="#services">ABOUT</a>
         <a className={styles.desktopNavItem} href="#projects">PROJECTS</a>
-        <a className={styles.desktopNavItem} href="#team">TEAM</a>
-        <a className={styles.desktopNavItem} href="#contact">CONTACT</a>
+        <a className={styles.desktopNavItem} href="#footer">CONTACT</a>
       </nav>
 
       <nav className={`d-flex justify-content-between d-lg-none ${styles.mobileNavToggle}`}>

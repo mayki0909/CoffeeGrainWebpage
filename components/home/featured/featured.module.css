@@ -1,4 +1,4 @@
-/* DESKTOP */
+/* MOBILE */
 @media screen and (max-width: 1000px){
   .content {
     margin-top: 40px;
@@ -6,6 +6,8 @@
   }
 
   .content h1 {
+    font-family: 'Manrope', sans-serif;
+    font-style: normal;
     font-weight: 700;
     font-size: 32px;
     line-height: 32px;
@@ -38,14 +40,16 @@
 /* MOBILE */
 @media screen and (min-width: 1000px) {
   .content {
-    margin-top: 280px;
+    margin-top: 160px;
     z-index: 2;
   }
 
   .content h1 {
-    font-weight: 500;
-    font-size: 110px;
-    line-height: 104px;
+    font-family: 'Manrope', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 104px;
+    line-height: 112px;
     margin-bottom: 2.5rem;
   }
 
