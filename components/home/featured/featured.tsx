@@ -5,7 +5,6 @@ import styles from './featured.module.css';
 export const Featured: NextComponentType = () => {
   return (
     <section id='featured'>
-      <img className={styles.waves} src='/images/heronavigacija.png' alt='Spilled coffee'/>
       <div className='container-fluid'>
         <div className='row'>
           <div className='col'></div>
@@ -15,17 +14,15 @@ export const Featured: NextComponentType = () => {
               Coffee grains studio is a creative agency created by ambitious, resourceful friends 
               from different digital fields who came together to work on new projects.
             </p>
-            <a href="#contact">
+            <a href="#footer">
               <button>
                 Get in touch &rarr;
               </button>
             </a>
           </div>
         </div>
-        <a className='row' href='#projects'>
-          <img className={`mx-auto ${styles.scrollDown}`} src="/images/scrollDown.svg" alt="Scroll down" />
-        </a>
       </div>
+      <img className={styles.coffee} src='/images/SpilledCoffee.jpg' alt='Spilled coffee'/>
     </section>
   )
 }

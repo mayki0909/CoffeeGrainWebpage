@@ -13,11 +13,11 @@ export const Projects: NextComponentType = () => {
   ]
 
   return (
-    <section id='projects' className='backgroundBrown'>
-      <Wave />
+    <section id='projects'>
+      {/* <Wave /> */}
       <div className='container'>
         <p className={styles.recent}>RECENT PROJECTS</p>
-        <SwiperHelper 
+        <SwiperHelper
           loop={true} 
           spaceBetween={50} 
           slidesPerView={1} 

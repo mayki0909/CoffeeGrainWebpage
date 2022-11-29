@@ -16,6 +16,7 @@ export const SwiperHelper = ({loop,spaceBetween,slidesPerView, slides}: Props) =
         loop={loop}
         spaceBetween={spaceBetween}
         slidesPerView={slidesPerView}
+        autoplay={{delay: 3000}}
       >
         {slides.map((slide,i)=>{
           return (
